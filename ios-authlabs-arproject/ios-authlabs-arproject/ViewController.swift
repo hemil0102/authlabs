@@ -15,6 +15,17 @@ class ViewController: UIViewController, ARSessionDelegate {
         UIApplication.shared.isIdleTimerDisabled = true
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        resetTracking()
+    }
+    
+    private func resetTracking() {
+        guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil) else { return }
+        arConfiguration.trackingImages = referenceImages
+        arView.session.run(arConfiguration, options: [.resetTracking, .removeExistingAnchors])
+    }
+    
     func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
         // set initial project
     }
