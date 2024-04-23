@@ -12,7 +12,6 @@ AR활용 이미지 인식·검출·추적·증강 및 ChatGPT API 활용 이미�
 - ARKit
 - RealityKit 
 <br/>
-
 ## ✦ 구현사항
 
 1. (구현) 마커로 활용할 이미지 선정
