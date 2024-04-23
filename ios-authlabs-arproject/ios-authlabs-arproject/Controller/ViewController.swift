@@ -14,6 +14,7 @@ class ViewController: UIViewController, ARSessionDelegate {
         arView.session.delegate = self
         arConfiguration.maximumNumberOfTrackedImages = 4
         UIApplication.shared.isIdleTimerDisabled = true
+        arView.renderOptions = [.disableGroundingShadows]
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -59,22 +60,34 @@ class ViewController: UIViewController, ARSessionDelegate {
             
             arGuideView.updateImage(with: colorImage)
             arGuideView.updateInformationView(name: imageName, category: imageCategory, description: imageDescription)
-        }
-        
-        // extentions asImage() 메서드로 UIView를 UIImage로 변환 - Information View
-        arGuideView.isHidden = false
-        guard let arGuideViewImage = self.arGuideView.asImage().resized(toSize: CGSize(width: 200, height: 100)) else {
-            return print("이미지 사이즈 조절에 실패했습니다.")
-        }
-        arGuideView.isHidden = true
+            
+            // extentions asImage() 메서드로 UIView를 UIImage로 변환 - Information View
+            arGuideView.isHidden = false
+            guard let arGuideViewImage = self.arGuideView.asImage().resized(toSize: CGSize(width: 200, height: 100)) else {
+                return print("이미지 사이즈 조절에 실패했습니다.")
+            }
+            arGuideView.isHidden = true
 
-        let arGuideTemp = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
-        guard let imageData = arGuideViewImage.jpegData(compressionQuality: 1.0) else {
-            fatalError("Failed to convert UIImage to Data")
-        }
-        try! imageData.write(to: arGuideTemp)
-        guard let informationTexture = try? TextureResource.load(contentsOf: arGuideTemp) else {
-            fatalError("Couldn't find image")
+            let arGuideTemp = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+            guard let imageData = arGuideViewImage.jpegData(compressionQuality: 1.0) else {
+                fatalError("Failed to convert UIImage to Data")
+            }
+            try! imageData.write(to: arGuideTemp)
+            guard let informationTexture = try? TextureResource.load(contentsOf: arGuideTemp) else {
+                fatalError("Couldn't find image")
+            }
+            
+            // Entity(3D오브젝트) 생성
+            let detectPlaneMaterial = UnlitMaterial(color: .white.withAlphaComponent(0.5))
+
+            let detectPlane = MeshResource.generatePlane(width: Float(referenceImage.physicalSize.width), height: Float(referenceImage.physicalSize.height))
+            let detectPlaneEntity = ModelEntity(mesh: detectPlane, materials: [detectPlaneMaterial])
+            
+            var infomationPlaneMaterial = UnlitMaterial(color: .white)
+            infomationPlaneMaterial.color =  SimpleMaterial.BaseColor(tint: .white.withAlphaComponent(1), texture: .init(informationTexture))
+            let infomationPlane = MeshResource.generatePlane(width: Float(0.2), height: Float(0.1), cornerRadius: 0.005)
+            let infomationPlaneEntity = ModelEntity(mesh: infomationPlane, materials: [infomationPlaneMaterial])
+            
         }
     }
     
