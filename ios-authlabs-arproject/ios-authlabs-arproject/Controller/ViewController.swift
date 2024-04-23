@@ -26,8 +26,12 @@ class ViewController: UIViewController, ARSessionDelegate {
         arView.session.run(arConfiguration, options: [.resetTracking, .removeExistingAnchors])
     }
     
+    //이미지 인식이 성공하였을 때의 로직을 담당하는 델리게이트 메서드
     func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
-        // set initial project
+        for anchor in anchors {
+            // 이미지 인식 성공시 ARImageAnchor 생성
+            guard let imageAnchor = anchor as? ARImageAnchor else { return }
+        }
     }
     
     deinit {
