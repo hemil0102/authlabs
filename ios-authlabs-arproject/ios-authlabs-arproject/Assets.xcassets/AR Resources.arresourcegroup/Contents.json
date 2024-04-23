@@ -1,0 +1,17 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "resources" : [
+    {
+      "filename" : "QRCode.arreferenceimage"
+    },
+    {
+      "filename" : "Starbucks.arreferenceimage"
+    },
+    {
+      "filename" : "Stay Hungry Stay Foolish.arreferenceimage"
+    }
+  ]
+}
