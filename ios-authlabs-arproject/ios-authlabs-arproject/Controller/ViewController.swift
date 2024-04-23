@@ -88,6 +88,29 @@ class ViewController: UIViewController, ARSessionDelegate {
             let infomationPlane = MeshResource.generatePlane(width: Float(0.2), height: Float(0.1), cornerRadius: 0.005)
             let infomationPlaneEntity = ModelEntity(mesh: infomationPlane, materials: [infomationPlaneMaterial])
             
+            // Entity(3D오브젝트)의 위치 설정
+            let detectPlanePosition = SIMD3<Float>(0, 0, 0)
+            detectPlaneEntity.position = detectPlanePosition
+            detectPlaneEntity.transform.rotation = simd_quatf(angle:  -.pi / 2, axis: SIMD3<Float>(1, 0, 0))
+            
+            let planeSize = SIMD2<Float>(Float(referenceImage.physicalSize.width), Float(referenceImage.physicalSize.height))
+            let planeCenter = SIMD3<Float>(0, 0, 0)
+            let planeCorner = SIMD3<Float>(0, (planeSize.x / 2 - 0.1), (planeSize.y / 2 + 0.05))
+            let informationPlanePostion = planeCenter + planeCorner
+            
+            infomationPlaneEntity.position = informationPlanePostion
+            infomationPlaneEntity.transform.rotation = simd_quatf(angle:  -.pi / 2, axis: SIMD3<Float>(1, 0, 0))
+            
+            // 앵커 설정
+            let anchorEntity = AnchorEntity(anchor: imageAnchor)
+            
+            
+            // 앵커에 Entity 추가
+            anchorEntity.addChild(detectPlaneEntity)
+            anchorEntity.addChild(infomationPlaneEntity)
+            
+            // 씬에 앵커 추가
+            arView.scene.addAnchor(anchorEntity)
         }
     }
     
