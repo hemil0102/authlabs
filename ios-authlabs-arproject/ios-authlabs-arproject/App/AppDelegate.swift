@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  ios-authlabs-arproject
-//
-//  Created by Harry Ho on 4/23/24.
-//
 
 import UIKit
 
