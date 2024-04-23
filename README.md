@@ -18,4 +18,5 @@ AR활용 이미지 인식·검출·추적·증강 및 ChatGPT API 활용 이미�
 6. (미구현) 검색한 이미지 3장의 유사도 측정
 <br/>
 ## ✦ 구동화면
+
 ![ezgif-4-01c5c65182](https://github.com/hemil0102/authlabs/assets/83139316/87784f47-3a29-4599-8ba2-1364e8878d83)
