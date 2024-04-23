@@ -24,5 +24,4 @@ AR활용 이미지 인식·검출·추적·증강 및 ChatGPT API 활용 이미�
 
 ## ✦ 구동화면
 
-
-![ezgif-4-01c5c65182](https://github.com/hemil0102/authlabs/assets/83139316/87784f47-3a29-4599-8ba2-1364e8878d83)
+![ezgif-4-01c5c65182](https://github.com/hemil0102/authlabs/assets/83139316/e1a3bcd6-cd59-407c-b9b9-28f8bb87f913)
