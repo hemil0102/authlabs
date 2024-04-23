@@ -11,6 +11,7 @@
 		C78363C92BD7DB6300F9A983 /* ARGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363C82BD7DB6300F9A983 /* ARGuideView.swift */; };
 		C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */; };
 		C78363CE2BD7DC4E00F9A983 /* extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */; };
+		C78363D12BD7DD7000F9A983 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363D02BD7DD7000F9A983 /* ButtonView.swift */; };
 		C7EA10E32BD74C3000E1FEA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA10E22BD74C3000E1FEA6 /* AppDelegate.swift */; };
 		C7EA10E72BD74C3000E1FEA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA10E62BD74C3000E1FEA6 /* ViewController.swift */; };
 		C7EA10EA2BD74C3000E1FEA6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C7EA10E92BD74C3000E1FEA6 /* Base */; };
@@ -43,6 +44,7 @@
 		C78363C82BD7DB6300F9A983 /* ARGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARGuideView.swift; sourceTree = "<group>"; };
 		C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIView.swift"; sourceTree = "<group>"; };
 		C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIImage.swift"; sourceTree = "<group>"; };
+		C78363D02BD7DD7000F9A983 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		C7EA10DF2BD74C3000E1FEA6 /* ios-authlabs-arproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-authlabs-arproject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EA10E22BD74C3000E1FEA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7EA10E62BD74C3000E1FEA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				C78363C82BD7DB6300F9A983 /* ARGuideView.swift */,
+				C78363D02BD7DD7000F9A983 /* ButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */,
 				C7EA10E72BD74C3000E1FEA6 /* ViewController.swift in Sources */,
 				C7EA10E32BD74C3000E1FEA6 /* AppDelegate.swift in Sources */,
+				C78363D12BD7DD7000F9A983 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
