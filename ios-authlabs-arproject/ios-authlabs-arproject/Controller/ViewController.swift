@@ -143,6 +143,7 @@ class ViewController: UIViewController, ARSessionDelegate {
             buttonPlaneEntity.position = buttonPosition
             buttonPlaneEntity.transform.rotation = simd_quatf(angle: -.pi / 2, axis: SIMD3<Float>(1, 0, 0))
             
+            
             // 앵커 설정
             let anchorEntity = AnchorEntity(anchor: imageAnchor)
             
