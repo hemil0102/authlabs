@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */; };
 		C7EA10E32BD74C3000E1FEA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA10E22BD74C3000E1FEA6 /* AppDelegate.swift */; };
 		C7EA10E72BD74C3000E1FEA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA10E62BD74C3000E1FEA6 /* ViewController.swift */; };
 		C7EA10EA2BD74C3000E1FEA6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C7EA10E92BD74C3000E1FEA6 /* Base */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerImage.swift; sourceTree = "<group>"; };
 		C7EA10DF2BD74C3000E1FEA6 /* ios-authlabs-arproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-authlabs-arproject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EA10E22BD74C3000E1FEA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7EA10E62BD74C3000E1FEA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C78363C02BD7D8AB00F9A983 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C78363C52BD7D8E400F9A983 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C7EA10E62BD74C3000E1FEA6 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C78363C62BD7D8F700F9A983 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C7EA10E22BD74C3000E1FEA6 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		C7EA10D62BD74C3000E1FEA6 = {
 			isa = PBXGroup;
 			children = (
@@ -96,8 +122,9 @@
 		C7EA10E12BD74C3000E1FEA6 /* ios-authlabs-arproject */ = {
 			isa = PBXGroup;
 			children = (
-				C7EA10E22BD74C3000E1FEA6 /* AppDelegate.swift */,
-				C7EA10E62BD74C3000E1FEA6 /* ViewController.swift */,
+				C78363C62BD7D8F700F9A983 /* App */,
+				C78363C02BD7D8AB00F9A983 /* Model */,
+				C78363C52BD7D8E400F9A983 /* Controller */,
 				C7EA10E82BD74C3000E1FEA6 /* Main.storyboard */,
 				C7EA10EB2BD74C3200E1FEA6 /* Assets.xcassets */,
 				C7EA10ED2BD74C3200E1FEA6 /* LaunchScreen.storyboard */,
@@ -253,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */,
 				C7EA10E72BD74C3000E1FEA6 /* ViewController.swift in Sources */,
 				C7EA10E32BD74C3000E1FEA6 /* AppDelegate.swift in Sources */,
 			);
