@@ -31,6 +31,17 @@ class ViewController: UIViewController, ARSessionDelegate {
         for anchor in anchors {
             // 이미지 인식 성공시 ARImageAnchor 생성
             guard let imageAnchor = anchor as? ARImageAnchor else { return }
+            
+            // 인식 성공한 이미지의 이름을 기반으로 정보 가져오기
+            let referenceImage = imageAnchor.referenceImage
+            guard let imageIndex = markerImages.firstIndex(where: { $0.name == referenceImage.name }) else {
+                return print("이미지 정보를 불러오지 못했습니다.")
+            }
+            
+            let imageName = markerImages[imageIndex].name
+            let imageCategory = markerImages[imageIndex].category.rawValue
+            let imageDescription = markerImages[imageIndex].description
+            guard let colorImage = UIImage(named: "Color" + "\(imageName)") else { return  }
         }
     }
     
