@@ -22,6 +22,11 @@
 5. (미구현) 캡처 이미지를 입력값으로 Chat GPT 유사 이미지 검색 및 3장 확보 
 6. (미구현) 검색한 이미지 3장의 유사도 측정
 
+## ✦ 상세 기능 구현 설명
+
+1. ARImageTrackingConfiguration()
+내용 업데이트 중
+
 ## ✦ 확인방법
 
 1. Xcode Asset 내부 AR Resource 파일의 이미지를 컴퓨터 모니터에 열어서 확인 가능
