@@ -22,6 +22,10 @@
 5. (미구현) 캡처 이미지를 입력값으로 Chat GPT 유사 이미지 검색 및 3장 확보 
 6. (미구현) 검색한 이미지 3장의 유사도 측정
 
+## ✦ 확인방법
+
+1. Xcode Asset 내부 AR Resource 파일의 이미지를 컴퓨터 모니터에 열어서 확인 가능
+
 ## ✦ 구동화면
 
 ![ezgif-4-01c5c65182](https://github.com/hemil0102/authlabs/assets/83139316/e1a3bcd6-cd59-407c-b9b9-28f8bb87f913)
