@@ -31,12 +31,12 @@ ARWorldTrackingConfiguration()으로 초반에 구현을 시도하였으나, 이
 **2. resetTracking()**
 
 ```swift
-        guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil) else {
-            fatalError("Missing expected asset catalog resources.")
-        }
+guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil) else {
+    fatalError("Missing expected asset catalog resources.")
+}
         
-        arConfiguration.trackingImages = referenceImages
-        arView.session.run(arConfiguration, options: [.resetTracking, .removeExistingAnchors])
+arConfiguration.trackingImages = referenceImages
+arView.session.run(arConfiguration, options: [.resetTracking, .removeExistingAnchors])
 
 ```
 해당 코드를 통해서 Xcode AR Resource asset에 등록된 이미지로 이미지 인식을 수행합니다. 
