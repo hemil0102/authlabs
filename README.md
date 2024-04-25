@@ -88,6 +88,7 @@ infomationPlaneMaterial.color =  SimpleMaterial.BaseColor(tint: .white.withAlpha
 그림자 효과를 제거해주며, Material을 무광 흰색으로 지정해줍니다. 
 
 **5. Marker Model**
+
 과제에서 제시된 마커의 구분과, 이미지의 정의(분류)를 아래 그림처럼 모델링하였습니다. 
 ```swift
 arView.renderOptions = [.disableGroundingShadows]
