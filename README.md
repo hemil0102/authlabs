@@ -57,22 +57,22 @@ ARSessionDelegate은 ARKit에서 제공하는 델리게이트로
 마찬가지 방식으로 버튼의 Texture도 같은 방식으로 만들었습니다. 
 
 ```Swift
-            // extentions asImage() 메서드로 UIView를 UIImage로 변환 - Information View
-            arGuideView.isHidden = false
-            guard let arGuideViewImage = self.arGuideView.asImage().resized(toSize: CGSize(width: 200, height: 100)) else {
-                return print("이미지 사이즈 조절에 실패했습니다.")
-            }
-            arGuideView.isHidden = true
+// extentions asImage() 메서드로 UIView를 UIImage로 변환 - Information View
+arGuideView.isHidden = false
+guard let arGuideViewImage = self.arGuideView.asImage().resized(toSize: CGSize(width: 200, height: 100)) else {
+    return print("이미지 사이즈 조절에 실패했습니다.")
+}
+arGuideView.isHidden = true
             
-            // UIImage를 texture로 생성
-            let arGuideTemp = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
-            guard let imageData = arGuideViewImage.jpegData(compressionQuality: 1.0) else {
-                return print("UIImage로부터 데이터 생성에 실패했습니다.")
-            }
-            try! imageData.write(to: arGuideTemp)
-            guard let informationTexture = try? TextureResource.load(contentsOf: arGuideTemp) else {
-                return print("이미지를 찾을 수 없습니다. ")
-            }
+// UIImage를 texture로 생성
+let arGuideTemp = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+guard let imageData = arGuideViewImage.jpegData(compressionQuality: 1.0) else {
+    return print("UIImage로부터 데이터 생성에 실패했습니다.")
+}
+try! imageData.write(to: arGuideTemp)
+guard let informationTexture = try? TextureResource.load(contentsOf: arGuideTemp) else {
+    return print("이미지를 찾을 수 없습니다. ")
+}
 
 ```
 
@@ -89,7 +89,11 @@ infomationPlaneMaterial.color =  SimpleMaterial.BaseColor(tint: .white.withAlpha
 
 **5. Marker Model**
 과제에서 제시된 마커의 구분과, 이미지의 정의(분류)를 아래 그림처럼 모델링하였습니다. 
-![Screenshot 2024-04-25 at 3 40 35 PM](https://github.com/hemil0102/authlabs/assets/83139316/c2e75bfd-214b-4751-b7e2-e6a0b21a8da4)
+```swift
+arView.renderOptions = [.disableGroundingShadows]
+var infomationPlaneMaterial = UnlitMaterial(color: .white)
+infomationPlaneMaterial.color =  SimpleMaterial.BaseColor(tint: .white.withAlphaComponent(1), texture: .init(informationTexture))
+```
 
 
 ## ✦ 확인방법
