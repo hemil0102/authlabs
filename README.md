@@ -24,8 +24,55 @@
 
 ## ✦ 상세 기능 구현 설명
 
-1. ARImageTrackingConfiguration()
-내용 업데이트 중
+**1. ARImageTrackingConfiguration()**
+
+ARWorldTrackingConfiguration()으로 초반에 구현을 시도하였으나, 이미지 인식의 정확도가 ARImageTrackingConfiguration()가 더 뛰어나 해당 기술을 적용합니다. 
+
+**2. resetTracking()**
+
+```swift
+        guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil) else {
+            fatalError("Missing expected asset catalog resources.")
+        }
+        
+        arConfiguration.trackingImages = referenceImages
+        arView.session.run(arConfiguration, options: [.resetTracking, .removeExistingAnchors])
+
+```
+해당 코드를 통해서 Xcode AR Resource asset에 등록된 이미지로 이미지 인식을 수행합니다. 
+
+**3. session(_ session: ARSession, didAdd anchors: [ARAnchor])**
+
+ARSessionDelegate은 ARKit에서 제공하는 델리게이트로 
+이미지 인식을 성공할 경우 인식한 이미지의 imageAnchor를 생성해줍니다.
+
+이후 인식한 이미지 위에 인식했다는 표시를 하기 위해 detectPlaneMaterial 생성해줍니다. 
+해당 과제에서는 반투명 흰색의 평면을 인식한 이미지 위에 표시해줬습니다. 
+
+**4. UI와 Texture**
+
+이미지 인식에 성공하였을 경우, 관련 정보를 보여줄 infomationPlaneEntity를 만들어주었습니다.
+이 경우 UIView를 Entity위에 바로 올려주고 싶었는데, 관련 api나 예제를 찾지는 못하였고,
+대신에 UIView를 이미지로 변환하고 이를 Texture로 활용하는 방식으로 정보를 표현했습니다.
+마찬가지 방식으로 버튼의 Texture도 같은 방식으로 만들었습니다. 
+
+![Screenshot 2024-04-25 at 3 37 47 PM](https://github.com/hemil0102/authlabs/assets/83139316/5d17f13c-185d-4d40-91e7-2fc70e9902ec)
+
+Texture를 입혀주면서 어려웠던 점은, 입히고나니 회색빛이 돌아서 이미지가 어두워보였고, 
+이를 해결하기 위해서 아래와 같은 코드를 적용했습니다. 
+
+```swift
+arView.renderOptions = [.disableGroundingShadows]
+var infomationPlaneMaterial = UnlitMaterial(color: .white)
+infomationPlaneMaterial.color =  SimpleMaterial.BaseColor(tint: .white.withAlphaComponent(1), texture: .init(informationTexture))
+```
+
+그림자 효과를 제거해주며, Material을 무광 흰색으로 지정해줍니다. 
+
+**5. Marker Model**
+과제에서 제시된 마커의 구분과, 이미지의 정의(분류)를 아래 그림처럼 모델링하였습니다. 
+![Screenshot 2024-04-25 at 3 40 35 PM](https://github.com/hemil0102/authlabs/assets/83139316/c2e75bfd-214b-4751-b7e2-e6a0b21a8da4)
+
 
 ## ✦ 확인방법
 
