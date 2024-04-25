@@ -56,7 +56,25 @@ ARSessionDelegate은 ARKit에서 제공하는 델리게이트로
 대신에 UIView를 이미지로 변환하고 이를 Texture로 활용하는 방식으로 정보를 표현했습니다.
 마찬가지 방식으로 버튼의 Texture도 같은 방식으로 만들었습니다. 
 
-![Screenshot 2024-04-25 at 3 37 47 PM](https://github.com/hemil0102/authlabs/assets/83139316/5d17f13c-185d-4d40-91e7-2fc70e9902ec)
+```Swift
+            // extentions asImage() 메서드로 UIView를 UIImage로 변환 - Information View
+            arGuideView.isHidden = false
+            guard let arGuideViewImage = self.arGuideView.asImage().resized(toSize: CGSize(width: 200, height: 100)) else {
+                return print("이미지 사이즈 조절에 실패했습니다.")
+            }
+            arGuideView.isHidden = true
+            
+            // UIImage를 texture로 생성
+            let arGuideTemp = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+            guard let imageData = arGuideViewImage.jpegData(compressionQuality: 1.0) else {
+                return print("UIImage로부터 데이터 생성에 실패했습니다.")
+            }
+            try! imageData.write(to: arGuideTemp)
+            guard let informationTexture = try? TextureResource.load(contentsOf: arGuideTemp) else {
+                return print("이미지를 찾을 수 없습니다. ")
+            }
+
+```
 
 Texture를 입혀주면서 어려웠던 점은, 입히고나니 회색빛이 돌아서 이미지가 어두워보였고, 
 이를 해결하기 위해서 아래와 같은 코드를 적용했습니다. 
