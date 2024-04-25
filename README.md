@@ -91,9 +91,9 @@ infomationPlaneMaterial.color =  SimpleMaterial.BaseColor(tint: .white.withAlpha
 
 과제에서 제시된 마커의 구분과, 이미지의 정의(분류)를 아래 그림처럼 모델링하였습니다. 
 ```swift
-arView.renderOptions = [.disableGroundingShadows]
-var infomationPlaneMaterial = UnlitMaterial(color: .white)
-infomationPlaneMaterial.color =  SimpleMaterial.BaseColor(tint: .white.withAlphaComponent(1), texture: .init(informationTexture))
+MarkerImage(name: "QRCode", marker: .printed, category: .tag, description: "QR Code입니다. Quick Response Code의 약어죠."),
+MarkerImage(name: "Starbucks", marker: .printed, category: .logo, description: "스타벅스라는 브랜드명은 소설 '모비딕'의 일등 항해사 이름에서 유래했다."),
+MarkerImage(name: "StayHungryStayFoolish", marker: .printed, category: .text, description: "끊임없이 갈망하며, 바보처럼 도전하십시오 - 스티브 잡스")
 ```
 
 
