@@ -1,4 +1,3 @@
-
 import UIKit
 
 extension UIImage {
@@ -18,5 +17,21 @@ extension UIImage {
         let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
         
         return resizedImage
+    }
+}
+
+extension UIImage {
+    func cropped(to rect: CGRect) -> UIImage? {
+        guard let cgImage = self.cgImage else { return nil }
+        
+        guard let croppedCGImage = cgImage.cropping(to: rect) else { return nil }
+        
+        return UIImage(cgImage: croppedCGImage)
+    }
+}
+
+extension UIImage {
+    var base64: String? {
+        self.jpegData(compressionQuality: 0.0)?.base64EncodedString()
     }
 }
