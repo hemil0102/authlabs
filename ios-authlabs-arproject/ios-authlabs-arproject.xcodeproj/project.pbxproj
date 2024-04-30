@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C735C0B72BE121600061477A /* CaptureImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0B62BE121600061477A /* CaptureImage.swift */; };
 		C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */; };
 		C78363C92BD7DB6300F9A983 /* ARGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363C82BD7DB6300F9A983 /* ARGuideView.swift */; };
 		C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C735C0B62BE121600061477A /* CaptureImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImage.swift; sourceTree = "<group>"; };
 		C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerImage.swift; sourceTree = "<group>"; };
 		C78363C82BD7DB6300F9A983 /* ARGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARGuideView.swift; sourceTree = "<group>"; };
 		C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIView.swift"; sourceTree = "<group>"; };
@@ -83,10 +85,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C78363C02BD7D8AB00F9A983 /* Model */ = {
+		C735C0B32BE1213D0061477A /* Marker */ = {
 			isa = PBXGroup;
 			children = (
 				C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */,
+			);
+			path = Marker;
+			sourceTree = "<group>";
+		};
+		C735C0B42BE121470061477A /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				C735C0B62BE121600061477A /* CaptureImage.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		C78363C02BD7D8AB00F9A983 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C735C0B32BE1213D0061477A /* Marker */,
+				C735C0B42BE121470061477A /* Image */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,6 +331,7 @@
 				C78363CE2BD7DC4E00F9A983 /* extension+UIImage.swift in Sources */,
 				C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */,
 				C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */,
+				C735C0B72BE121600061477A /* CaptureImage.swift in Sources */,
 				C7EA10E72BD74C3000E1FEA6 /* ViewController.swift in Sources */,
 				C7EA10E32BD74C3000E1FEA6 /* AppDelegate.swift in Sources */,
 				C78363D12BD7DD7000F9A983 /* ButtonView.swift in Sources */,
