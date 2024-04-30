@@ -21,7 +21,7 @@
 <img width="887" alt="Screenshot 2024-04-30 at 9 02 08 PM" src="https://github.com/hemil0102/authlabs/assets/83139316/fa0cb4a2-b89a-4735-9e50-a9276d43cae8">
 
 ## ✦ 상세 기능 구현 설명
-별첨 PPT에 결와 함께 작성했습니다. 
+미니인턴으로 전달한 별첨 PPT에 개요와 개선사항 등 작성하여 전달합니다. 
 
 ## ✦ 확인방법
 1. 동봉된 Marker를 Asset ARResource에 등록하여 활용 (기본 printed 이미지 마커 등록되어 있음)
