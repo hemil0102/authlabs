@@ -12,6 +12,8 @@
 		C735C0BB2BE1223A0061477A /* ARGuideTextureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0BA2BE1223A0061477A /* ARGuideTextureView.swift */; };
 		C735C0BD2BE122510061477A /* SearchButtonTextureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0BC2BE122510061477A /* SearchButtonTextureView.swift */; };
 		C735C0BF2BE122740061477A /* PrecheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0BE2BE122740061477A /* PrecheckView.swift */; };
+		C735C0C12BE122E90061477A /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0C02BE122E90061477A /* ModalViewController.swift */; };
+		C735C0C32BE1231E0061477A /* ImageSimilarityAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0C22BE1231E0061477A /* ImageSimilarityAnalyzer.swift */; };
 		C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */; };
 		C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */; };
 		C78363CE2BD7DC4E00F9A983 /* extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */; };
@@ -48,6 +50,8 @@
 		C735C0BA2BE1223A0061477A /* ARGuideTextureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARGuideTextureView.swift; sourceTree = "<group>"; };
 		C735C0BC2BE122510061477A /* SearchButtonTextureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButtonTextureView.swift; sourceTree = "<group>"; };
 		C735C0BE2BE122740061477A /* PrecheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecheckView.swift; sourceTree = "<group>"; };
+		C735C0C02BE122E90061477A /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		C735C0C22BE1231E0061477A /* ImageSimilarityAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSimilarityAnalyzer.swift; sourceTree = "<group>"; };
 		C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerImage.swift; sourceTree = "<group>"; };
 		C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIView.swift"; sourceTree = "<group>"; };
 		C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIImage.swift"; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 			children = (
 				C7EA10E62BD74C3000E1FEA6 /* ImageTrackingViewController.swift */,
 				C735C0B82BE121FC0061477A /* ImageTrackingViewController+ARSessionDelegate.swift */,
+				C735C0C02BE122E90061477A /* ModalViewController.swift */,
+				C735C0C22BE1231E0061477A /* ImageSimilarityAnalyzer.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -333,9 +339,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C735C0C32BE1231E0061477A /* ImageSimilarityAnalyzer.swift in Sources */,
 				C78363CE2BD7DC4E00F9A983 /* extension+UIImage.swift in Sources */,
 				C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */,
 				C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */,
+				C735C0C12BE122E90061477A /* ModalViewController.swift in Sources */,
 				C735C0BB2BE1223A0061477A /* ARGuideTextureView.swift in Sources */,
 				C735C0BD2BE122510061477A /* SearchButtonTextureView.swift in Sources */,
 				C735C0B72BE121600061477A /* CaptureImage.swift in Sources */,
