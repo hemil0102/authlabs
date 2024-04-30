@@ -2,7 +2,7 @@ import UIKit
 
 class SearchButtonTextureView: UIView {
     
-    lazy var buttonNameLabel: UILabel = {
+    private lazy var buttonNameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12, weight: .bold)
         label.numberOfLines = 0

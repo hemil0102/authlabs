@@ -43,7 +43,7 @@ final class ImageTrackingViewController: UIViewController {
     }
     
     //MARK: 버튼 수행 메서드
-    @objc func captureButtonTapped() {
+    @objc private func captureButtonTapped() {
         shouldCaptureImage = true
         resetTracking()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
@@ -51,7 +51,7 @@ final class ImageTrackingViewController: UIViewController {
         }
     }
     
-    @objc func imageSearchButtonTapped() {
+    @objc private func imageSearchButtonTapped() {
         let modalViewController = ModalViewController()
         generateGPTRequestMessage()
         modalViewController.referenceImage = detectedColorImage

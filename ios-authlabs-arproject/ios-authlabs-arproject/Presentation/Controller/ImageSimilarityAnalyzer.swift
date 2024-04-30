@@ -3,7 +3,7 @@ import Vision
 
 class ImageSimilarityAnalyzer {
     //MARK: 이미지를 VNFeaturePrintObservation으로 변환하는 함수
-    func featureprintObservationForImage(image: UIImage) -> VNFeaturePrintObservation? {
+    private func featureprintObservationForImage(image: UIImage) -> VNFeaturePrintObservation? {
         guard let imageData = image.jpegData(compressionQuality: 1.0) else {
             return nil
         }

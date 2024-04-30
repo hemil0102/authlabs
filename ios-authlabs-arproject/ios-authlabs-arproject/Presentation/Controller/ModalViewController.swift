@@ -5,17 +5,17 @@ import Combine
 class ModalViewController: UIViewController {
     
     //MARK: 프로퍼티 생성
-    let mapper = Mapper(dataDecoder: DataDecoder(networkManager: NetworkManager()))
-    let imageAnalyzer = ImageSimilarityAnalyzer()
-    var imageSimilarities = [Float]()
-    var cancellable = Set<AnyCancellable>()
+    private let mapper = Mapper(dataDecoder: DataDecoder(networkManager: NetworkManager()))
+    private let imageAnalyzer = ImageSimilarityAnalyzer()
+    private var imageSimilarities = [Float]()
+    private var cancellable = Set<AnyCancellable>()
     var messages = [RequestMessage]()
     var referenceImage = UIImage()
     var detectedImage = UIImage()
-    var searchedImage = UIImage()
-    var searchedImages = [UIImage]()
-    var imageSimilarityLabels = [UILabel]()
-    var imageURL = [URL]()
+    private var searchedImage = UIImage()
+    private var searchedImages = [UIImage]()
+    private var imageSimilarityLabels = [UILabel]()
+    private var imageURL = [URL]()
     
     //MARK: 레이블과 이미지뷰 생성
     private lazy var descriptionLabel: UILabel = {
@@ -218,7 +218,7 @@ class ModalViewController: UIViewController {
     }
     
     //MARK: URL로된 주소를 이미지로 변환한다.
-    func loadImage(from urlString: String, completion: @escaping (UIImage?) -> Void) {
+    private func loadImage(from urlString: String, completion: @escaping (UIImage?) -> Void) {
   
         guard let url = URL(string: urlString) else {
             completion(nil)
@@ -258,7 +258,7 @@ class ModalViewController: UIViewController {
     }
     
     //MARK: 모달을 닫아준다.
-    @objc func closeButtonTapped() {
+    @objc private func closeButtonTapped() {
         dismiss(animated: true, completion: nil)
     }
 }
