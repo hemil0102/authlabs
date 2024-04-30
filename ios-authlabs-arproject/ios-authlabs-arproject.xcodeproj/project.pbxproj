@@ -35,6 +35,8 @@
 		C735C0F42BE125C20061477A /* DataDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0F32BE125C20061477A /* DataDecodable.swift */; };
 		C735C0F62BE125C90061477A /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0F52BE125C90061477A /* DataDecoder.swift */; };
 		C735C0FA2BE1260F0061477A /* GPTAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0F92BE1260F0061477A /* GPTAnswer.swift */; };
+		C735C0FC2BE126330061477A /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0FB2BE126330061477A /* Mappable.swift */; };
+		C735C0FE2BE1263A0061477A /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0FD2BE1263A0061477A /* Mapper.swift */; };
 		C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */; };
 		C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */; };
 		C78363CE2BD7DC4E00F9A983 /* extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */; };
@@ -94,6 +96,8 @@
 		C735C0F32BE125C20061477A /* DataDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDecodable.swift; sourceTree = "<group>"; };
 		C735C0F52BE125C90061477A /* DataDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
 		C735C0F92BE1260F0061477A /* GPTAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTAnswer.swift; sourceTree = "<group>"; };
+		C735C0FB2BE126330061477A /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
+		C735C0FD2BE1263A0061477A /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerImage.swift; sourceTree = "<group>"; };
 		C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIView.swift"; sourceTree = "<group>"; };
 		C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIImage.swift"; sourceTree = "<group>"; };
@@ -270,6 +274,8 @@
 		C735C0F82BE126010061477A /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				C735C0FB2BE126330061477A /* Mappable.swift */,
+				C735C0FD2BE1263A0061477A /* Mapper.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -515,6 +521,7 @@
 				C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */,
 				C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */,
 				C735C0FA2BE1260F0061477A /* GPTAnswer.swift in Sources */,
+				C735C0FE2BE1263A0061477A /* Mapper.swift in Sources */,
 				C735C0E02BE124940061477A /* EndpointProvider.swift in Sources */,
 				C735C0EA2BE125190061477A /* GPTMessageDTO.swift in Sources */,
 				C735C0C12BE122E90061477A /* ModalViewController.swift in Sources */,
@@ -531,6 +538,7 @@
 				C735C0DA2BE124640061477A /* APIHostType.swift in Sources */,
 				C7EA10E72BD74C3000E1FEA6 /* ImageTrackingViewController.swift in Sources */,
 				C735C0EC2BE125220061477A /* GPTRequestDTO.swift in Sources */,
+				C735C0FC2BE126330061477A /* Mappable.swift in Sources */,
 				C735C0CD2BE123E10061477A /* TextureGenerationError.swift in Sources */,
 				C735C0C82BE123870061477A /* KeyEnvironmentHandler.swift in Sources */,
 				C735C0BF2BE122740061477A /* PrecheckView.swift in Sources */,
