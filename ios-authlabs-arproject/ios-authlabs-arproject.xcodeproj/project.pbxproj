@@ -34,6 +34,7 @@
 		C735C0F22BE1259B0061477A /* GoogleSearchDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0F12BE1259B0061477A /* GoogleSearchDTO.swift */; };
 		C735C0F42BE125C20061477A /* DataDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0F32BE125C20061477A /* DataDecodable.swift */; };
 		C735C0F62BE125C90061477A /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0F52BE125C90061477A /* DataDecoder.swift */; };
+		C735C0FA2BE1260F0061477A /* GPTAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0F92BE1260F0061477A /* GPTAnswer.swift */; };
 		C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */; };
 		C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */; };
 		C78363CE2BD7DC4E00F9A983 /* extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */; };
@@ -92,6 +93,7 @@
 		C735C0F12BE1259B0061477A /* GoogleSearchDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSearchDTO.swift; sourceTree = "<group>"; };
 		C735C0F32BE125C20061477A /* DataDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDecodable.swift; sourceTree = "<group>"; };
 		C735C0F52BE125C90061477A /* DataDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
+		C735C0F92BE1260F0061477A /* GPTAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTAnswer.swift; sourceTree = "<group>"; };
 		C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerImage.swift; sourceTree = "<group>"; };
 		C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIView.swift"; sourceTree = "<group>"; };
 		C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIImage.swift"; sourceTree = "<group>"; };
@@ -152,6 +154,8 @@
 		C735C0C42BE123490061477A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C735C0F82BE126010061477A /* Mapper */,
+				C735C0F72BE125FE0061477A /* Entity */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -253,6 +257,21 @@
 				C735C0F12BE1259B0061477A /* GoogleSearchDTO.swift */,
 			);
 			path = Google;
+			sourceTree = "<group>";
+		};
+		C735C0F72BE125FE0061477A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C735C0F92BE1260F0061477A /* GPTAnswer.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C735C0F82BE126010061477A /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 		C78363C02BD7D8AB00F9A983 /* Model */ = {
@@ -495,6 +514,7 @@
 				C735C0D42BE1242B0061477A /* RequestProvidable.swift in Sources */,
 				C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */,
 				C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */,
+				C735C0FA2BE1260F0061477A /* GPTAnswer.swift in Sources */,
 				C735C0E02BE124940061477A /* EndpointProvider.swift in Sources */,
 				C735C0EA2BE125190061477A /* GPTMessageDTO.swift in Sources */,
 				C735C0C12BE122E90061477A /* ModalViewController.swift in Sources */,
