@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C735C0B72BE121600061477A /* CaptureImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0B62BE121600061477A /* CaptureImage.swift */; };
+		C735C0B92BE121FC0061477A /* ImageTrackingViewController+ARSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0B82BE121FC0061477A /* ImageTrackingViewController+ARSessionDelegate.swift */; };
 		C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */; };
 		C78363C92BD7DB6300F9A983 /* ARGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363C82BD7DB6300F9A983 /* ARGuideView.swift */; };
 		C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */; };
 		C78363CE2BD7DC4E00F9A983 /* extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */; };
 		C78363D12BD7DD7000F9A983 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363D02BD7DD7000F9A983 /* ButtonView.swift */; };
 		C7EA10E32BD74C3000E1FEA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA10E22BD74C3000E1FEA6 /* AppDelegate.swift */; };
-		C7EA10E72BD74C3000E1FEA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA10E62BD74C3000E1FEA6 /* ViewController.swift */; };
+		C7EA10E72BD74C3000E1FEA6 /* ImageTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA10E62BD74C3000E1FEA6 /* ImageTrackingViewController.swift */; };
 		C7EA10EA2BD74C3000E1FEA6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C7EA10E92BD74C3000E1FEA6 /* Base */; };
 		C7EA10EC2BD74C3200E1FEA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EA10EB2BD74C3200E1FEA6 /* Assets.xcassets */; };
 		C7EA10EF2BD74C3200E1FEA6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C7EA10EE2BD74C3200E1FEA6 /* Base */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		C735C0B62BE121600061477A /* CaptureImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImage.swift; sourceTree = "<group>"; };
+		C735C0B82BE121FC0061477A /* ImageTrackingViewController+ARSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageTrackingViewController+ARSessionDelegate.swift"; sourceTree = "<group>"; };
 		C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerImage.swift; sourceTree = "<group>"; };
 		C78363C82BD7DB6300F9A983 /* ARGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARGuideView.swift; sourceTree = "<group>"; };
 		C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIView.swift"; sourceTree = "<group>"; };
@@ -49,7 +51,7 @@
 		C78363D02BD7DD7000F9A983 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		C7EA10DF2BD74C3000E1FEA6 /* ios-authlabs-arproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-authlabs-arproject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EA10E22BD74C3000E1FEA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7EA10E62BD74C3000E1FEA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7EA10E62BD74C3000E1FEA6 /* ImageTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTrackingViewController.swift; sourceTree = "<group>"; };
 		C7EA10E92BD74C3000E1FEA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7EA10EB2BD74C3200E1FEA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7EA10EE2BD74C3200E1FEA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -113,7 +115,8 @@
 		C78363C52BD7D8E400F9A983 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C7EA10E62BD74C3000E1FEA6 /* ViewController.swift */,
+				C7EA10E62BD74C3000E1FEA6 /* ImageTrackingViewController.swift */,
+				C735C0B82BE121FC0061477A /* ImageTrackingViewController+ARSessionDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -131,6 +134,8 @@
 			children = (
 				C78363C82BD7DB6300F9A983 /* ARGuideView.swift */,
 				C78363D02BD7DD7000F9A983 /* ButtonView.swift */,
+				C7EA10E82BD74C3000E1FEA6 /* Main.storyboard */,
+				C7EA10ED2BD74C3200E1FEA6 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,9 +177,7 @@
 				C78363C72BD7DB5000F9A983 /* View */,
 				C78363C52BD7D8E400F9A983 /* Controller */,
 				C78363CA2BD7DC0300F9A983 /* Constant */,
-				C7EA10E82BD74C3000E1FEA6 /* Main.storyboard */,
 				C7EA10EB2BD74C3200E1FEA6 /* Assets.xcassets */,
-				C7EA10ED2BD74C3200E1FEA6 /* LaunchScreen.storyboard */,
 			);
 			path = "ios-authlabs-arproject";
 			sourceTree = "<group>";
@@ -332,9 +335,10 @@
 				C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */,
 				C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */,
 				C735C0B72BE121600061477A /* CaptureImage.swift in Sources */,
-				C7EA10E72BD74C3000E1FEA6 /* ViewController.swift in Sources */,
+				C7EA10E72BD74C3000E1FEA6 /* ImageTrackingViewController.swift in Sources */,
 				C7EA10E32BD74C3000E1FEA6 /* AppDelegate.swift in Sources */,
 				C78363D12BD7DD7000F9A983 /* ButtonView.swift in Sources */,
+				C735C0B92BE121FC0061477A /* ImageTrackingViewController+ARSessionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
