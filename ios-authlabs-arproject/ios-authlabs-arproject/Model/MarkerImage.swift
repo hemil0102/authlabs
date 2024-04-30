@@ -1,4 +1,3 @@
-
 import Foundation
 
 struct MarkerImage {
@@ -28,5 +27,8 @@ enum Classification: String {
 let markerImages = [
     MarkerImage(name: "QRCode", marker: .printed, category: .tag, description: "QR Code입니다. Quick Response Code의 약어죠."),
     MarkerImage(name: "Starbucks", marker: .printed, category: .logo, description: "스타벅스라는 브랜드명은 소설 '모비딕'의 일등 항해사 이름에서 유래했다."),
-    MarkerImage(name: "StayHungryStayFoolish", marker: .printed, category: .text, description: "끊임없이 갈망하며, 바보처럼 도전하십시오 - 스티브 잡스")
+    MarkerImage(name: "StayHungryStayFoolish", marker: .printed, category: .text, description: "끊임없이 갈망하며, 바보처럼 도전하십시오 - 스티브 잡스"),
+    MarkerImage(name: "CapturedQRCode", marker: .printed, category: .tag, description: "(촬영본) QR Code입니다. Quick Response Code의 약어죠."),
+    MarkerImage(name: "CaputredStarbucks", marker: .printed, category: .logo, description: "(촬영본) 스타벅스라는 브랜드명은 소설 '모비딕'의 일등 항해사 이름에서 유래했다."),
+    MarkerImage(name: "CapturedStayHungryStayFoolish", marker: .printed, category: .text, description: "(촬영본) 끊임없이 갈망하며, 바보처럼 도전하십시오 - 스티브 잡스")
 ]
