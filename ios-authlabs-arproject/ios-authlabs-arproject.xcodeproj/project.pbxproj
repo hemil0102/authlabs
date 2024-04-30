@@ -17,6 +17,14 @@
 		C735C0C82BE123870061477A /* KeyEnvironmentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0C72BE123870061477A /* KeyEnvironmentHandler.swift */; };
 		C735C0CB2BE123CB0061477A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0CA2BE123CB0061477A /* NetworkError.swift */; };
 		C735C0CD2BE123E10061477A /* TextureGenerationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0CC2BE123E10061477A /* TextureGenerationError.swift */; };
+		C735C0D42BE1242B0061477A /* RequestProvidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0D32BE1242B0061477A /* RequestProvidable.swift */; };
+		C735C0D62BE1243E0061477A /* RequestPRovider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0D52BE1243E0061477A /* RequestPRovider.swift */; };
+		C735C0D82BE124500061477A /* RequestInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0D72BE124500061477A /* RequestInformation.swift */; };
+		C735C0DA2BE124640061477A /* APIHostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0D92BE124640061477A /* APIHostType.swift */; };
+		C735C0DC2BE124770061477A /* SchemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0DB2BE124770061477A /* SchemeType.swift */; };
+		C735C0DE2BE124850061477A /* EndpointProvidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0DD2BE124850061477A /* EndpointProvidable.swift */; };
+		C735C0E02BE124940061477A /* EndpointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0DF2BE124940061477A /* EndpointProvider.swift */; };
+		C735C0E22BE124A80061477A /* URLInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0E12BE124A80061477A /* URLInformation.swift */; };
 		C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */; };
 		C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */; };
 		C78363CE2BD7DC4E00F9A983 /* extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */; };
@@ -58,6 +66,14 @@
 		C735C0C72BE123870061477A /* KeyEnvironmentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyEnvironmentHandler.swift; sourceTree = "<group>"; };
 		C735C0CA2BE123CB0061477A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		C735C0CC2BE123E10061477A /* TextureGenerationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureGenerationError.swift; sourceTree = "<group>"; };
+		C735C0D32BE1242B0061477A /* RequestProvidable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProvidable.swift; sourceTree = "<group>"; };
+		C735C0D52BE1243E0061477A /* RequestPRovider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPRovider.swift; sourceTree = "<group>"; };
+		C735C0D72BE124500061477A /* RequestInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInformation.swift; sourceTree = "<group>"; };
+		C735C0D92BE124640061477A /* APIHostType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHostType.swift; sourceTree = "<group>"; };
+		C735C0DB2BE124770061477A /* SchemeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeType.swift; sourceTree = "<group>"; };
+		C735C0DD2BE124850061477A /* EndpointProvidable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProvidable.swift; sourceTree = "<group>"; };
+		C735C0DF2BE124940061477A /* EndpointProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProvider.swift; sourceTree = "<group>"; };
+		C735C0E12BE124A80061477A /* URLInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLInformation.swift; sourceTree = "<group>"; };
 		C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerImage.swift; sourceTree = "<group>"; };
 		C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIView.swift"; sourceTree = "<group>"; };
 		C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIImage.swift"; sourceTree = "<group>"; };
@@ -135,6 +151,11 @@
 		C735C0C62BE1236E0061477A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C735C0D22BE1241A0061477A /* Decoder */,
+				C735C0D12BE124130061477A /* DTO */,
+				C735C0D02BE1240E0061477A /* NetworkManager */,
+				C735C0CF2BE1240A0061477A /* URL */,
+				C735C0CE2BE124040061477A /* URLRequest */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -146,6 +167,49 @@
 				C735C0CC2BE123E10061477A /* TextureGenerationError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		C735C0CE2BE124040061477A /* URLRequest */ = {
+			isa = PBXGroup;
+			children = (
+				C735C0D32BE1242B0061477A /* RequestProvidable.swift */,
+				C735C0D52BE1243E0061477A /* RequestPRovider.swift */,
+				C735C0D72BE124500061477A /* RequestInformation.swift */,
+			);
+			path = URLRequest;
+			sourceTree = "<group>";
+		};
+		C735C0CF2BE1240A0061477A /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				C735C0D92BE124640061477A /* APIHostType.swift */,
+				C735C0DB2BE124770061477A /* SchemeType.swift */,
+				C735C0DD2BE124850061477A /* EndpointProvidable.swift */,
+				C735C0DF2BE124940061477A /* EndpointProvider.swift */,
+				C735C0E12BE124A80061477A /* URLInformation.swift */,
+			);
+			path = URL;
+			sourceTree = "<group>";
+		};
+		C735C0D02BE1240E0061477A /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		C735C0D12BE124130061477A /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		C735C0D22BE1241A0061477A /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Decoder;
 			sourceTree = "<group>";
 		};
 		C78363C02BD7D8AB00F9A983 /* Model */ = {
@@ -382,18 +446,26 @@
 			files = (
 				C735C0C32BE1231E0061477A /* ImageSimilarityAnalyzer.swift in Sources */,
 				C735C0CB2BE123CB0061477A /* NetworkError.swift in Sources */,
+				C735C0D62BE1243E0061477A /* RequestPRovider.swift in Sources */,
 				C78363CE2BD7DC4E00F9A983 /* extension+UIImage.swift in Sources */,
+				C735C0D42BE1242B0061477A /* RequestProvidable.swift in Sources */,
 				C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */,
 				C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */,
+				C735C0E02BE124940061477A /* EndpointProvider.swift in Sources */,
 				C735C0C12BE122E90061477A /* ModalViewController.swift in Sources */,
+				C735C0DE2BE124850061477A /* EndpointProvidable.swift in Sources */,
+				C735C0D82BE124500061477A /* RequestInformation.swift in Sources */,
 				C735C0BB2BE1223A0061477A /* ARGuideTextureView.swift in Sources */,
 				C735C0BD2BE122510061477A /* SearchButtonTextureView.swift in Sources */,
 				C735C0B72BE121600061477A /* CaptureImage.swift in Sources */,
+				C735C0E22BE124A80061477A /* URLInformation.swift in Sources */,
+				C735C0DA2BE124640061477A /* APIHostType.swift in Sources */,
 				C7EA10E72BD74C3000E1FEA6 /* ImageTrackingViewController.swift in Sources */,
 				C735C0CD2BE123E10061477A /* TextureGenerationError.swift in Sources */,
 				C735C0C82BE123870061477A /* KeyEnvironmentHandler.swift in Sources */,
 				C735C0BF2BE122740061477A /* PrecheckView.swift in Sources */,
 				C7EA10E32BD74C3000E1FEA6 /* AppDelegate.swift in Sources */,
+				C735C0DC2BE124770061477A /* SchemeType.swift in Sources */,
 				C735C0B92BE121FC0061477A /* ImageTrackingViewController+ARSessionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
