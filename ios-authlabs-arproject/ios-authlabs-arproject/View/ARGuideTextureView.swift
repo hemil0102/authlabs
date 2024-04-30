@@ -1,7 +1,6 @@
-
 import UIKit
 
-class ARGuideView: UIView {
+class ARGuideTextureView: UIView {
     
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
@@ -53,14 +52,12 @@ class ARGuideView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         configureAppearance()
         setupViews()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
         configureAppearance()
         setupViews()
     }
@@ -74,15 +71,12 @@ class ARGuideView: UIView {
     
     private func setupViews() {
         addSubview(imageView)
-        
         verticalStackView.addArrangedSubview(imageNameLabel)
         verticalStackView.addArrangedSubview(imageCategoryLabel)
         verticalStackView.addArrangedSubview(imageDescriptionLabel)
         horizontalStackView.addArrangedSubview(imageView)
         horizontalStackView.addArrangedSubview(verticalStackView)
-        
         addSubview(horizontalStackView)
-        
         imageView.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         
         NSLayoutConstraint.activate([
@@ -90,22 +84,15 @@ class ARGuideView: UIView {
             imageCategoryLabel.widthAnchor.constraint(equalToConstant: 150),
             imageDescriptionLabel.widthAnchor.constraint(equalToConstant: 150),
             
-            imageView.topAnchor.constraint(equalTo: topAnchor),
-            
             horizontalStackView.topAnchor.constraint(equalTo: topAnchor, constant: 2),
             horizontalStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 2),
             horizontalStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             horizontalStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-            horizontalStackView.heightAnchor.constraint(equalToConstant: 300)
         ])
     }
     
     func updateImage(with referenceImage: UIImage) {
         imageView.image = referenceImage
-        let aspectRatio = referenceImage.size.width / referenceImage.size.height
-        let imageViewWidth = min(bounds.width, 250 * aspectRatio)
-        let imageViewHeight = imageViewWidth / aspectRatio
-        imageView.heightAnchor.constraint(equalToConstant: min(imageViewHeight, 250)).isActive = true
     }
     
     func updateInformationView(name: String, category: String, description: String) {
@@ -114,3 +101,4 @@ class ARGuideView: UIView {
         imageDescriptionLabel.text = description
     }
 }
+
