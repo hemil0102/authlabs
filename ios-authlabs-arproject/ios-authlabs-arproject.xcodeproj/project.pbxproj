@@ -14,6 +14,7 @@
 		C735C0BF2BE122740061477A /* PrecheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0BE2BE122740061477A /* PrecheckView.swift */; };
 		C735C0C12BE122E90061477A /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0C02BE122E90061477A /* ModalViewController.swift */; };
 		C735C0C32BE1231E0061477A /* ImageSimilarityAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0C22BE1231E0061477A /* ImageSimilarityAnalyzer.swift */; };
+		C735C0C82BE123870061477A /* KeyEnvironmentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0C72BE123870061477A /* KeyEnvironmentHandler.swift */; };
 		C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */; };
 		C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */; };
 		C78363CE2BD7DC4E00F9A983 /* extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */; };
@@ -52,6 +53,7 @@
 		C735C0BE2BE122740061477A /* PrecheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecheckView.swift; sourceTree = "<group>"; };
 		C735C0C02BE122E90061477A /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		C735C0C22BE1231E0061477A /* ImageSimilarityAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSimilarityAnalyzer.swift; sourceTree = "<group>"; };
+		C735C0C72BE123870061477A /* KeyEnvironmentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyEnvironmentHandler.swift; sourceTree = "<group>"; };
 		C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerImage.swift; sourceTree = "<group>"; };
 		C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIView.swift"; sourceTree = "<group>"; };
 		C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIImage.swift"; sourceTree = "<group>"; };
@@ -109,6 +111,30 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		C735C0C42BE123490061477A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C735C0C52BE123540061477A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C78363C72BD7DB5000F9A983 /* View */,
+				C78363C52BD7D8E400F9A983 /* Controller */,
+				C78363C02BD7D8AB00F9A983 /* Model */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C735C0C62BE1236E0061477A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		C78363C02BD7D8AB00F9A983 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +180,7 @@
 			children = (
 				C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */,
 				C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */,
+				C735C0C72BE123870061477A /* KeyEnvironmentHandler.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -182,9 +209,9 @@
 			isa = PBXGroup;
 			children = (
 				C78363C62BD7D8F700F9A983 /* App */,
-				C78363C02BD7D8AB00F9A983 /* Model */,
-				C78363C72BD7DB5000F9A983 /* View */,
-				C78363C52BD7D8E400F9A983 /* Controller */,
+				C735C0C52BE123540061477A /* Presentation */,
+				C735C0C42BE123490061477A /* Domain */,
+				C735C0C62BE1236E0061477A /* Data */,
 				C78363CA2BD7DC0300F9A983 /* Constant */,
 				C7EA10EB2BD74C3200E1FEA6 /* Assets.xcassets */,
 			);
@@ -348,6 +375,7 @@
 				C735C0BD2BE122510061477A /* SearchButtonTextureView.swift in Sources */,
 				C735C0B72BE121600061477A /* CaptureImage.swift in Sources */,
 				C7EA10E72BD74C3000E1FEA6 /* ImageTrackingViewController.swift in Sources */,
+				C735C0C82BE123870061477A /* KeyEnvironmentHandler.swift in Sources */,
 				C735C0BF2BE122740061477A /* PrecheckView.swift in Sources */,
 				C7EA10E32BD74C3000E1FEA6 /* AppDelegate.swift in Sources */,
 				C735C0B92BE121FC0061477A /* ImageTrackingViewController+ARSessionDelegate.swift in Sources */,
