@@ -46,9 +46,6 @@
 		C7EA10EA2BD74C3000E1FEA6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C7EA10E92BD74C3000E1FEA6 /* Base */; };
 		C7EA10EC2BD74C3200E1FEA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EA10EB2BD74C3200E1FEA6 /* Assets.xcassets */; };
 		C7EA10EF2BD74C3200E1FEA6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C7EA10EE2BD74C3200E1FEA6 /* Base */; };
-		C7EA10F92BD74C3200E1FEA6 /* ios_authlabs_arprojectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA10F82BD74C3200E1FEA6 /* ios_authlabs_arprojectTests.swift */; };
-		C7EA11032BD74C3200E1FEA6 /* ios_authlabs_arprojectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA11022BD74C3200E1FEA6 /* ios_authlabs_arprojectUITests.swift */; };
-		C7EA11052BD74C3200E1FEA6 /* ios_authlabs_arprojectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA11042BD74C3200E1FEA6 /* ios_authlabs_arprojectUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,10 +107,7 @@
 		C7EA10EB2BD74C3200E1FEA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7EA10EE2BD74C3200E1FEA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7EA10F42BD74C3200E1FEA6 /* ios-authlabs-arprojectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-authlabs-arprojectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7EA10F82BD74C3200E1FEA6 /* ios_authlabs_arprojectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_authlabs_arprojectTests.swift; sourceTree = "<group>"; };
 		C7EA10FE2BD74C3200E1FEA6 /* ios-authlabs-arprojectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-authlabs-arprojectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7EA11022BD74C3200E1FEA6 /* ios_authlabs_arprojectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_authlabs_arprojectUITests.swift; sourceTree = "<group>"; };
-		C7EA11042BD74C3200E1FEA6 /* ios_authlabs_arprojectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_authlabs_arprojectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,8 +338,6 @@
 			isa = PBXGroup;
 			children = (
 				C7EA10E12BD74C3000E1FEA6 /* ios-authlabs-arproject */,
-				C7EA10F72BD74C3200E1FEA6 /* ios-authlabs-arprojectTests */,
-				C7EA11012BD74C3200E1FEA6 /* ios-authlabs-arprojectUITests */,
 				C7EA10E02BD74C3000E1FEA6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -373,23 +365,6 @@
 				C7EA10EB2BD74C3200E1FEA6 /* Assets.xcassets */,
 			);
 			path = "ios-authlabs-arproject";
-			sourceTree = "<group>";
-		};
-		C7EA10F72BD74C3200E1FEA6 /* ios-authlabs-arprojectTests */ = {
-			isa = PBXGroup;
-			children = (
-				C7EA10F82BD74C3200E1FEA6 /* ios_authlabs_arprojectTests.swift */,
-			);
-			path = "ios-authlabs-arprojectTests";
-			sourceTree = "<group>";
-		};
-		C7EA11012BD74C3200E1FEA6 /* ios-authlabs-arprojectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C7EA11022BD74C3200E1FEA6 /* ios_authlabs_arprojectUITests.swift */,
-				C7EA11042BD74C3200E1FEA6 /* ios_authlabs_arprojectUITestsLaunchTests.swift */,
-			);
-			path = "ios-authlabs-arprojectUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -566,7 +541,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7EA10F92BD74C3200E1FEA6 /* ios_authlabs_arprojectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,8 +548,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7EA11032BD74C3200E1FEA6 /* ios_authlabs_arprojectUITests.swift in Sources */,
-				C7EA11052BD74C3200E1FEA6 /* ios_authlabs_arprojectUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
