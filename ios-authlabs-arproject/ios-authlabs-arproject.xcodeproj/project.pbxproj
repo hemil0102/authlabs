@@ -15,6 +15,8 @@
 		C735C0C12BE122E90061477A /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0C02BE122E90061477A /* ModalViewController.swift */; };
 		C735C0C32BE1231E0061477A /* ImageSimilarityAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0C22BE1231E0061477A /* ImageSimilarityAnalyzer.swift */; };
 		C735C0C82BE123870061477A /* KeyEnvironmentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0C72BE123870061477A /* KeyEnvironmentHandler.swift */; };
+		C735C0CB2BE123CB0061477A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0CA2BE123CB0061477A /* NetworkError.swift */; };
+		C735C0CD2BE123E10061477A /* TextureGenerationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0CC2BE123E10061477A /* TextureGenerationError.swift */; };
 		C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */; };
 		C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */; };
 		C78363CE2BD7DC4E00F9A983 /* extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */; };
@@ -54,6 +56,8 @@
 		C735C0C02BE122E90061477A /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		C735C0C22BE1231E0061477A /* ImageSimilarityAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSimilarityAnalyzer.swift; sourceTree = "<group>"; };
 		C735C0C72BE123870061477A /* KeyEnvironmentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyEnvironmentHandler.swift; sourceTree = "<group>"; };
+		C735C0CA2BE123CB0061477A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C735C0CC2BE123E10061477A /* TextureGenerationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureGenerationError.swift; sourceTree = "<group>"; };
 		C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerImage.swift; sourceTree = "<group>"; };
 		C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIView.swift"; sourceTree = "<group>"; };
 		C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIImage.swift"; sourceTree = "<group>"; };
@@ -135,6 +139,15 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		C735C0C92BE123BD0061477A /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				C735C0CA2BE123CB0061477A /* NetworkError.swift */,
+				C735C0CC2BE123E10061477A /* TextureGenerationError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		C78363C02BD7D8AB00F9A983 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +225,7 @@
 				C735C0C52BE123540061477A /* Presentation */,
 				C735C0C42BE123490061477A /* Domain */,
 				C735C0C62BE1236E0061477A /* Data */,
+				C735C0C92BE123BD0061477A /* Error */,
 				C78363CA2BD7DC0300F9A983 /* Constant */,
 				C7EA10EB2BD74C3200E1FEA6 /* Assets.xcassets */,
 			);
@@ -367,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C735C0C32BE1231E0061477A /* ImageSimilarityAnalyzer.swift in Sources */,
+				C735C0CB2BE123CB0061477A /* NetworkError.swift in Sources */,
 				C78363CE2BD7DC4E00F9A983 /* extension+UIImage.swift in Sources */,
 				C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */,
 				C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */,
@@ -375,6 +390,7 @@
 				C735C0BD2BE122510061477A /* SearchButtonTextureView.swift in Sources */,
 				C735C0B72BE121600061477A /* CaptureImage.swift in Sources */,
 				C7EA10E72BD74C3000E1FEA6 /* ImageTrackingViewController.swift in Sources */,
+				C735C0CD2BE123E10061477A /* TextureGenerationError.swift in Sources */,
 				C735C0C82BE123870061477A /* KeyEnvironmentHandler.swift in Sources */,
 				C735C0BF2BE122740061477A /* PrecheckView.swift in Sources */,
 				C7EA10E32BD74C3000E1FEA6 /* AppDelegate.swift in Sources */,
