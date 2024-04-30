@@ -31,6 +31,7 @@
 		C735C0EA2BE125190061477A /* GPTMessageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0E92BE125190061477A /* GPTMessageDTO.swift */; };
 		C735C0EC2BE125220061477A /* GPTRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0EB2BE125220061477A /* GPTRequestDTO.swift */; };
 		C735C0EE2BE125290061477A /* GPTBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0ED2BE125290061477A /* GPTBody.swift */; };
+		C735C0F22BE1259B0061477A /* GoogleSearchDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0F12BE1259B0061477A /* GoogleSearchDTO.swift */; };
 		C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */; };
 		C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */; };
 		C78363CE2BD7DC4E00F9A983 /* extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */; };
@@ -86,6 +87,7 @@
 		C735C0E92BE125190061477A /* GPTMessageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTMessageDTO.swift; sourceTree = "<group>"; };
 		C735C0EB2BE125220061477A /* GPTRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTRequestDTO.swift; sourceTree = "<group>"; };
 		C735C0ED2BE125290061477A /* GPTBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTBody.swift; sourceTree = "<group>"; };
+		C735C0F12BE1259B0061477A /* GoogleSearchDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSearchDTO.swift; sourceTree = "<group>"; };
 		C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerImage.swift; sourceTree = "<group>"; };
 		C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIView.swift"; sourceTree = "<group>"; };
 		C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIImage.swift"; sourceTree = "<group>"; };
@@ -215,10 +217,8 @@
 		C735C0D12BE124130061477A /* DTO */ = {
 			isa = PBXGroup;
 			children = (
-				C735C0E72BE125110061477A /* GPTResoponseDTO.swift */,
-				C735C0E92BE125190061477A /* GPTMessageDTO.swift */,
-				C735C0EB2BE125220061477A /* GPTRequestDTO.swift */,
-				C735C0ED2BE125290061477A /* GPTBody.swift */,
+				C735C0F02BE1258F0061477A /* Google */,
+				C735C0EF2BE1257F0061477A /* OPENAI */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -228,6 +228,25 @@
 			children = (
 			);
 			path = Decoder;
+			sourceTree = "<group>";
+		};
+		C735C0EF2BE1257F0061477A /* OPENAI */ = {
+			isa = PBXGroup;
+			children = (
+				C735C0E72BE125110061477A /* GPTResoponseDTO.swift */,
+				C735C0E92BE125190061477A /* GPTMessageDTO.swift */,
+				C735C0EB2BE125220061477A /* GPTRequestDTO.swift */,
+				C735C0ED2BE125290061477A /* GPTBody.swift */,
+			);
+			path = OPENAI;
+			sourceTree = "<group>";
+		};
+		C735C0F02BE1258F0061477A /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				C735C0F12BE1259B0061477A /* GoogleSearchDTO.swift */,
+			);
+			path = Google;
 			sourceTree = "<group>";
 		};
 		C78363C02BD7D8AB00F9A983 /* Model */ = {
@@ -490,6 +509,7 @@
 				C735C0BF2BE122740061477A /* PrecheckView.swift in Sources */,
 				C7EA10E32BD74C3000E1FEA6 /* AppDelegate.swift in Sources */,
 				C735C0DC2BE124770061477A /* SchemeType.swift in Sources */,
+				C735C0F22BE1259B0061477A /* GoogleSearchDTO.swift in Sources */,
 				C735C0B92BE121FC0061477A /* ImageTrackingViewController+ARSessionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
