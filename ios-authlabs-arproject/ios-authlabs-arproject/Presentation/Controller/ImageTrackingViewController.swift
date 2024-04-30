@@ -1,3 +1,4 @@
+
 import UIKit
 import RealityKit
 import ARKit
@@ -8,15 +9,12 @@ final class ImageTrackingViewController: UIViewController {
     //MARK: 뷰와 프로퍼티 생성
     @IBOutlet weak var arView: ARView!
     private let arConfiguration = ARImageTrackingConfiguration()
-    
     private lazy var precheckView = PrecheckView()
     lazy var arGuideTextureView = ARGuideTextureView()
     lazy var searchButtonTextureView = SearchButtonTextureView()
     private let buttonStackView = UIStackView()
-    
     lazy var buttonCapturedImage = UIImage()
     lazy var detectedColorImage = UIImage()
-    
     private var messages = [RequestMessage]()
     var shouldCaptureImage: Bool = false
     var cancellable = Set<AnyCancellable>()

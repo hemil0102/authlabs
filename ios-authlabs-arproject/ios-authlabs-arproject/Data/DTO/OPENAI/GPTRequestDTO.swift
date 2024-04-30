@@ -1,3 +1,4 @@
+
 import Foundation
 
 struct GPTRequestDTO: Codable {

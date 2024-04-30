@@ -38,6 +38,7 @@
 		C735C0FC2BE126330061477A /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0FB2BE126330061477A /* Mappable.swift */; };
 		C735C0FE2BE1263A0061477A /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0FD2BE1263A0061477A /* Mapper.swift */; };
 		C7711E832BE1272B00661971 /* DEBUG-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7711E822BE1272B00661971 /* DEBUG-Keys.plist */; };
+		C7711E872BE12A8D00661971 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = C7711E862BE12A8D00661971 /* License.txt */; };
 		C78363C42BD7D8CF00F9A983 /* MarkerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */; };
 		C78363CC2BD7DC2700F9A983 /* extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */; };
 		C78363CE2BD7DC4E00F9A983 /* extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */; };
@@ -97,6 +98,7 @@
 		C735C0FB2BE126330061477A /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
 		C735C0FD2BE1263A0061477A /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		C7711E822BE1272B00661971 /* DEBUG-Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DEBUG-Keys.plist"; sourceTree = "<group>"; };
+		C7711E862BE12A8D00661971 /* License.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		C78363C32BD7D8CF00F9A983 /* MarkerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerImage.swift; sourceTree = "<group>"; };
 		C78363CB2BD7DC2700F9A983 /* extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIView.swift"; sourceTree = "<group>"; };
 		C78363CD2BD7DC4E00F9A983 /* extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIImage.swift"; sourceTree = "<group>"; };
@@ -163,9 +165,9 @@
 		C735C0C52BE123540061477A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				C78363C02BD7D8AB00F9A983 /* Model */,
 				C78363C72BD7DB5000F9A983 /* View */,
 				C78363C52BD7D8E400F9A983 /* Controller */,
-				C78363C02BD7D8AB00F9A983 /* Model */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -363,6 +365,7 @@
 				C78363CA2BD7DC0300F9A983 /* Constant */,
 				C7711E812BE1271100661971 /* Private */,
 				C7EA10EB2BD74C3200E1FEA6 /* Assets.xcassets */,
+				C7711E862BE12A8D00661971 /* License.txt */,
 			);
 			path = "ios-authlabs-arproject";
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7EA10EC2BD74C3200E1FEA6 /* Assets.xcassets in Resources */,
+				C7711E872BE12A8D00661971 /* License.txt in Resources */,
 				C7EA10EA2BD74C3000E1FEA6 /* Base in Resources */,
 				C7711E832BE1272B00661971 /* DEBUG-Keys.plist in Resources */,
 				C7EA10EF2BD74C3200E1FEA6 /* Base in Resources */,
