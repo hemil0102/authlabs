@@ -77,4 +77,4 @@ guard let topLeft = arView.project(imageAnchorPosition + SIMD3<Float>(-reference
 1. 동봉된 Marker를 Asset ARResource에 등록하여 활용 (기본 printed 이미지 마커 등록되어 있음)
 
 ## ✦ 구동화면
-![ezgif-1-f1dcc37aa0](https://github.com/hemil0102/authlabs/assets/83139316/76786548-a411-4c97-81e8-6fd1511b1460)
+
