@@ -84,7 +84,7 @@ final class ImageTrackingViewController: UIViewController {
             RequestMessage(
                 role: .user,
                 content: [
-                    RequestContent(type: .text, text: "그림은 촬영된 이미지야 외곽에 조금 덜 잘려나간 배경은 무시해줘. 그림에 집중해서 정의와 설명을 특징등을 잘 잡아서 30~50자 내로 설명 해줘. Google Custom Search API에 같은 이미지가 검색될 수 있게 영어로 설명해주고 사람 이름, 모양, 패턴, 정의 등에 신경쓰고 심플한 특징을 알려줘! 글을 따옴표 안에 넣지마", image_url: nil),
+                    RequestContent(type: .text, text: "그림은 촬영된 이미지야 외곽에 조금 덜 잘려나간 배경은 무시해줘. 그림에 집중해서 사람 이름, 모양, 패턴, 정의 등으로 30자 내로 설명 해줘. Google Custom Search API에 같은 이미지가 검색될 수 있게 무조건 한글이 아닌 영어로 설명해주세요. 그림에 문구가 있다면 설명에 문구를 넣고 따옴표는 사용하지 마세요, 예시: 정사각형의 QR코드이며 흰색 배경에 검정색 패턴이 있습니다.", image_url: nil),
                     RequestContent(type: .image_url, text: nil, image_url: ImageURL(url: "data:image/jpeg;base64,\(image64)"))
                 ],
                 toolCalls: nil)
@@ -96,7 +96,7 @@ final class ImageTrackingViewController: UIViewController {
         arView.session.delegate = self
         arView.renderOptions = [.disableGroundingShadows]
         arConfiguration.maximumNumberOfTrackedImages = 1
-        arConfiguration.worldAlignment = .gravity
+        //arConfiguration.worldAlignment = .gravityAndHeading
         arConfiguration.isAutoFocusEnabled = true
         arConfiguration.frameSemantics = .personSegmentationWithDepth
         UIApplication.shared.isIdleTimerDisabled = true

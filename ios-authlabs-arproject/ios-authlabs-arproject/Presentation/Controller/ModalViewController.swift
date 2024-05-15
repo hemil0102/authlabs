@@ -18,6 +18,15 @@ class ModalViewController: UIViewController {
     private var imageSimilarityLabels = [UILabel]()
     private var imageURL = [URL]()
     
+    // 이미지와 유사도를 저장할 구조체
+    struct ImageSimilarityPair {
+        let image: UIImage
+        let similarity: Float
+    }
+
+    // 이미지와 유사도를 관리할 배열
+    private var searchedImageSimilarities = [ImageSimilarityPair]()
+    
     //MARK: 레이블과 이미지뷰 생성
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
@@ -166,29 +175,46 @@ class ModalViewController: UIViewController {
             .store(in: &cancellable)
     }
     
-    //MARK: 유사하 이미지 3장을 뷰에 업데이트 하고 유사도를 측정한다.
     func updateSearchedImages(with images: [URL]) {
-        let group = DispatchGroup()
-        
         for (index, url) in images.enumerated() {
             let urlString = url.absoluteString
-            group.enter()
-            loadImage(from: urlString) { image in
-                defer { group.leave() }
+            DispatchQueue.main.async {
+                self.loadImage(from: urlString) { image in
                 guard let loadedImage = image else { return }
-                DispatchQueue.main.async {
                     if index < self.searchedImageViews.count {
-                        self.searchedImageViews[index].image = loadedImage
-                        self.searchedImages.append(loadedImage)
-                        
-                        //MARK: 이미지를 받아올 때마다 유사도 측정 및 레이블 생성하여 추가
+                        // 이미지를 받아올 때마다 유사도 측정 및 튜플로 묶어서 배열에 추가
                         let similarity = self.imageAnalyzer.measureSimilarityBetween(image1: self.referenceImage, image2: loadedImage)
+                        print(similarity)
+                        let imageSimilarityPair = ImageSimilarityPair(image: loadedImage, similarity: similarity)
+                        self.searchedImageSimilarities.append(imageSimilarityPair)
+                        
+                        // UI 업데이트
+                        self.searchedImageViews[index].image = loadedImage
+                        
+                        // 유사도 레이블 생성
                         let similarityLabel = self.createSimilarityLabel(with: similarity)
                         self.imageSimilarityLabels.append(similarityLabel)
                         self.imageSimilarityLabelStackView.addArrangedSubview(similarityLabel)
+                        
+                        // 만약 모든 이미지가 로드되었으면 유사도에 따라 정렬
+                        if self.searchedImageSimilarities.count == images.count {
+                            self.sortImagesBySimilarity()
+                        }
                     }
                 }
             }
+        }
+    }
+    
+    // 유사도에 따라 이미지와 레이블을 정렬하는 메서드
+    func sortImagesBySimilarity() {
+        // 유사도에 따라 정렬
+        self.searchedImageSimilarities.sort { $0.similarity > $1.similarity }
+        
+        // 이미지와 레이블을 새로운 순서에 맞게 업데이트
+        for (index, pair) in self.searchedImageSimilarities.enumerated() {
+            self.searchedImageViews[index].image = pair.image
+            self.imageSimilarityLabels[index].text = String(format: "%.2f", pair.similarity)
         }
     }
     
@@ -218,7 +244,7 @@ class ModalViewController: UIViewController {
         ])
     }
     
-    //MARK: URL로된 주소를 이미지로 변환한다.
+    // MARK: URL로된 주소를 이미지로 변환한다.
     private func loadImage(from urlString: String, completion: @escaping (UIImage?) -> Void) {
   
         guard let url = URL(string: urlString) else {

@@ -38,6 +38,8 @@ final class Mapper: Mappable {
                         imageLinks.append(imageUrl)
                     }
                 }
+                
+                print(imageLinks)
 
                 return imageLinks
             }

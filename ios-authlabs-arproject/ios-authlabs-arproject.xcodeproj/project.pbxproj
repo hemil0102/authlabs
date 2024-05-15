@@ -228,7 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				C735C0F02BE1258F0061477A /* Google */,
-				C735C0EF2BE1257F0061477A /* OPENAI */,
+				C735C0EF2BE1257F0061477A /* OpenAI */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -242,7 +242,7 @@
 			path = Decoder;
 			sourceTree = "<group>";
 		};
-		C735C0EF2BE1257F0061477A /* OPENAI */ = {
+		C735C0EF2BE1257F0061477A /* OpenAI */ = {
 			isa = PBXGroup;
 			children = (
 				C735C0E72BE125110061477A /* GPTResoponseDTO.swift */,
@@ -250,7 +250,7 @@
 				C735C0EB2BE125220061477A /* GPTRequestDTO.swift */,
 				C735C0ED2BE125290061477A /* GPTBody.swift */,
 			);
-			path = OPENAI;
+			path = OpenAI;
 			sourceTree = "<group>";
 		};
 		C735C0F02BE1258F0061477A /* Google */ = {

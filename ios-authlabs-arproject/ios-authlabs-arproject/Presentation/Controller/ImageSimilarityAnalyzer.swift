@@ -32,8 +32,7 @@ class ImageSimilarityAnalyzer {
         var distance = Float(0)
         do {
             try feature1.computeDistance(&distance, to: feature2)
-            
-            print("두 이미지 간의 유사도: \(1 - distance)")
+            //print("두 이미지 간의 유사도: \(1 - distance)")
         } catch {
             print("Error computing distance: \(error)")
         }
