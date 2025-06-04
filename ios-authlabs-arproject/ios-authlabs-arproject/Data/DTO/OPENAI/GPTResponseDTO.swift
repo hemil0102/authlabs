@@ -41,7 +41,7 @@ struct Content: Decodable {
 struct TopLogprobs: Decodable {
     let token: String
     let logprob: Double
-    let buyes: [Int]?
+    let bytes: [Int]?
 }
 
 struct Usage: Decodable {
