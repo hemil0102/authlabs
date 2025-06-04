@@ -27,7 +27,7 @@
 		C735C0E22BE124A80061477A /* URLInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0E12BE124A80061477A /* URLInformation.swift */; };
 		C735C0E42BE124CC0061477A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0E32BE124CC0061477A /* NetworkManager.swift */; };
 		C735C0E62BE124D50061477A /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0E52BE124D50061477A /* Requestable.swift */; };
-		C735C0E82BE125110061477A /* GPTResoponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0E72BE125110061477A /* GPTResoponseDTO.swift */; };
+               C735C0E82BE125110061477A /* GPTResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0E72BE125110061477A /* GPTResponseDTO.swift */; };
 		C735C0EA2BE125190061477A /* GPTMessageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0E92BE125190061477A /* GPTMessageDTO.swift */; };
 		C735C0EC2BE125220061477A /* GPTRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0EB2BE125220061477A /* GPTRequestDTO.swift */; };
 		C735C0EE2BE125290061477A /* GPTBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735C0ED2BE125290061477A /* GPTBody.swift */; };
@@ -87,7 +87,7 @@
 		C735C0E12BE124A80061477A /* URLInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLInformation.swift; sourceTree = "<group>"; };
 		C735C0E32BE124CC0061477A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C735C0E52BE124D50061477A /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
-		C735C0E72BE125110061477A /* GPTResoponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTResoponseDTO.swift; sourceTree = "<group>"; };
+               C735C0E72BE125110061477A /* GPTResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTResponseDTO.swift; sourceTree = "<group>"; };
 		C735C0E92BE125190061477A /* GPTMessageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTMessageDTO.swift; sourceTree = "<group>"; };
 		C735C0EB2BE125220061477A /* GPTRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTRequestDTO.swift; sourceTree = "<group>"; };
 		C735C0ED2BE125290061477A /* GPTBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTBody.swift; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 		C735C0EF2BE1257F0061477A /* OPENAI */ = {
 			isa = PBXGroup;
 			children = (
-				C735C0E72BE125110061477A /* GPTResoponseDTO.swift */,
+                               C735C0E72BE125110061477A /* GPTResponseDTO.swift */,
 				C735C0E92BE125190061477A /* GPTMessageDTO.swift */,
 				C735C0EB2BE125220061477A /* GPTRequestDTO.swift */,
 				C735C0ED2BE125290061477A /* GPTBody.swift */,
@@ -519,7 +519,7 @@
 				C735C0DE2BE124850061477A /* EndpointProvidable.swift in Sources */,
 				C735C0E62BE124D50061477A /* Requestable.swift in Sources */,
 				C735C0D82BE124500061477A /* RequestInformation.swift in Sources */,
-				C735C0E82BE125110061477A /* GPTResoponseDTO.swift in Sources */,
+                               C735C0E82BE125110061477A /* GPTResponseDTO.swift in Sources */,
 				C735C0BB2BE1223A0061477A /* ARGuideTextureView.swift in Sources */,
 				C735C0E42BE124CC0061477A /* NetworkManager.swift in Sources */,
 				C735C0BD2BE122510061477A /* SearchButtonTextureView.swift in Sources */,

@@ -15,7 +15,7 @@
 - CoreImage
 - Vision
 - ChatGPT Vision API
-- Google Custome Search API
+- Google Custom Search API
 
 ## ✦ 결과화면 및 구현 사항
 <img width="800" alt="Screenshot 2024-04-30 at 9 30 25 PM" src="https://github.com/hemil0102/authlabs/assets/83139316/5739ce54-47c0-444d-ad31-adcdfc2f5872">
